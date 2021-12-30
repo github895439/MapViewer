@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Map Viewer</title>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td style="vertical-align: top">
+                    設定<br>
+                    <textarea id="config" cols="50" rows="10">
+config = {"snapWidth":"1584","snapHeight":"861","snapPath":"\".\\ONI_Mission5\\0,4,0.png\"","viewSpacing":"10","baseP":{"x":"2","y":"10"},"shortcut1P":{"x":"","y":""},"shortcut2P":{"x":"","y":""},"shortcut3P":{"x":"","y":""},"shortcut4P":{"x":"","y":""},"shortcut5P":{"x":"","y":""},"shortcut6P":{"x":"","y":""},"shortcut7P":{"x":"","y":""},"shortcut8P":{"x":"","y":""},"shortcut9P":{"x":"","y":""},"shortcut0P":{"x":"","y":""}}
+</textarea><br>
+                    スナップサイズ　横<input type="text" id="snapWidth" value="" size="5">　縦<input type="text" id="snapHeight"
+                        value="" size="5"><br>
+                    スナップ間隔<input type="text" id="viewSpacing" value="" size="5"><br>
+                    スナップパス<input type="text" id="snapPath" value=""><br>
+                    ベース　横位置<input type="text" id="basePX" value="" size="5">　縦位置<input type="text" id="basePY" value=""
+                        size="5"><br>
+                    ショートカット1　横位置<input type="text" id="shortcut1PX" value="" size="5">　縦位置<input type="text"
+                        id="shortcut1PY" value="" size="5"><br>
+                    ショートカット2　横位置<input type="text" id="shortcut2PX" value="" size="5">　縦位置<input type="text"
+                        id="shortcut2PY" value="" size="5"><br>
+                    ショートカット3　横位置<input type="text" id="shortcut3PX" value="" size="5">　縦位置<input type="text"
+                        id="shortcut3PY" value="" size="5"><br>
+                    ショートカット4　横位置<input type="text" id="shortcut4PX" value="" size="5">　縦位置<input type="text"
+                        id="shortcut4PY" value="" size="5"><br>
+                    ショートカット5　横位置<input type="text" id="shortcut5PX" value="" size="5">　縦位置<input type="text"
+                        id="shortcut5PY" value="" size="5"><br>
+                    ショートカット6　横位置<input type="text" id="shortcut6PX" value="" size="5">　縦位置<input type="text"
+                        id="shortcut6PY" value="" size="5"><br>
+                    ショートカット7　横位置<input type="text" id="shortcut7PX" value="" size="5">　縦位置<input type="text"
+                        id="shortcut7PY" value="" size="5"><br>
+                    ショートカット8　横位置<input type="text" id="shortcut8PX" value="" size="5">　縦位置<input type="text"
+                        id="shortcut8PY" value="" size="5"><br>
+                    ショートカット9　横位置<input type="text" id="shortcut9PX" value="" size="5">　縦位置<input type="text"
+                        id="shortcut9PY" value="" size="5"><br>
+                    ショートカット0　横位置<input type="text" id="shortcut0PX" value="" size="5">　縦位置<input type="text"
+                        id="shortcut0PY" value="" size="5"><br>
+                    <input type="button" id="saveConfig" value="設定セーブ" disabled><br>
+                    <input type="button" id="loadConfig" value="設定ロード" disabled><br>
+                    <input type="button" id="openView" value="ビューオープン" disabled><br>
+                </td>
+                <td style="vertical-align: top">
+                </td>
+                <td style="vertical-align: top">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="MapViewer.js"></script>
+</body>
+
+</html>
